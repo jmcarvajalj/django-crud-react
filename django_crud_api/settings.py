@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-zj6_ey3lk9b4ekxajtl*#krji@@_@32p9%ovjqy82h6zfn0t3^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "web-production-89f0.up.railway.app"]
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages", 
     "django.contrib.staticfiles",
-    'whitenoise.runserver_nostatic', 
+    # 'whitenoise.runserver_nostatic', 
     "corsheaders", 
     "rest_framework",
     "coreapi", 
