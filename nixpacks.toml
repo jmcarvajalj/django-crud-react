@@ -4,4 +4,4 @@ providers = ["node", "python"]
 NODE_ENV = 'production'
 
 [phases.build]
-cmds = ["cd client", "npm install", "npm run build", "cd .."]
+cmds = ["cd client", "npm install", "npm run build"]
