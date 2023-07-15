@@ -3,5 +3,5 @@ providers = ["node", "python"]
 [variables]
 NODE_ENV = 'production'
 
-[phases.build]
-cmds = ["cd client", "npm install", "npm run build"]
+[deploy]
+startCommand = "cd client && npm install && npm run build && cd .. && python manage.py migrate && python manage collectstatic && gunicorn django_crud_api.wsgi"
